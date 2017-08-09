@@ -18,7 +18,7 @@ nodes:
     loopback: 10.0.0.13
     asn: 65013
     svi_vlan_ip:
-      100: "172.16.2.253"
+      200: "172.16.2.253"
     clag_role: "primary"
   leaf04:
     mgmt_ip: 192.168.0.14
