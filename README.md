@@ -16,7 +16,6 @@ Before running this demo, install [VirtualBox](https://www.virtualbox.org/wiki/D
     cd cldemo-vagrant
     vagrant up oob-mgmt-server oob-mgmt-switch leaf01 leaf02 leaf03 leaf04 spine01 spine02 server01 server02 server03 server04
     vagrant ssh oob-mgmt-server
-    sudo su - cumulus
     git clone https://github.com/cumulusnetworks/cldemo-config-mlag
     cd cldemo-config-mlag
     ansible-playbook deploy.yml
