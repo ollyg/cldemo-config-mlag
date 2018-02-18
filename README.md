@@ -1,8 +1,12 @@
 Demo MLAG Configurations
 ========================
-This Github repository contains the configuration files necessary for setting up Multi-Chassis Link Aggregation using Cumulus Linux and Quagga on the [Reference Topology](http://github.com/cumulusnetworks/cldemo-vagrant).
+This Github repository contains the configuration files necessary for setting
+up Multi-Chassis Link Aggregation using Cumulus Linux and FRRouting on the [Reference Topology](http://github.com/cumulusnetworks/cldemo-vagrant).
 
-The flatfiles in this repository will set up a BGP unnumbered routing fabric between the leafs and spines, and will configure MLAG between the two top-of-rack switches and the two servers in that rack. A helper script named `push-config.py` is available to quickly deploy the flatfiles to the devices in the network, but you could just as easily copy and paste them by hand or incorporate them into an automation tool instead.
+The flatfiles in this repository will set up a BGP unnumbered routing fabric
+between the leafs and spines, and will configure MLAG between the two
+top-of-rack switches and the two servers in that rack. Ansible is used to
+quickly deploy configuration from the OOB server to devices in the network.
 
 Quickstart: Run the demo
 ------------------------
