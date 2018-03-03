@@ -53,6 +53,13 @@ iface server4
 
 auto br0
 iface br0
-    bridge-ports peerlink server3 server4
+    bridge-vlan-aware yes
+    bridge-ports server3 server4 peerlink
+    bridge-pvid 1
+    bridge-vids 1
+
+auto vlan1
+iface vlan1
     address 172.16.2.1/24
-    bridge-stp on
+    vlan-id 1
+    vlan-raw-device br0
